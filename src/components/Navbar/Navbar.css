@@ -1,0 +1,9 @@
+.nav-icon {
+    margin-right: 0.50rem;
+    width: 15px;
+    height: 15px;
+}
+
+.no-hover:hover {
+    cursor: default !important;
+}

@@ -1,0 +1,51 @@
+ul.timeline::before {
+  content: " " !important;
+  background-image: linear-gradient(
+    0deg,
+    #ffffff 25%,
+    #cccccc 25%,
+    #cccccc 50%,
+    #ffffff 50%,
+    #ffffff 75%,
+    #cccccc 75%,
+    #cccccc 100%
+  ) !important;
+  left: 29px;
+  height: 90% !important;
+  top: 35px !important;
+}
+
+ul.timeline > li:before {
+  content: " " !important;
+  background: #cccccc !important;
+  position: relative !important;
+  left: -34px !important;
+  width: 8px !important;
+  height: 8px !important;
+  top: 21px !important;
+}
+
+ul.timeline > p.aktiven:before {
+  color: #38b87e !important;
+}
+
+#vsebina_zamaknjeno {
+  margin-left: 1.5rem;
+  font-family: "Myriad Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+}
+
+#timeline-help .btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #38b87e;
+  background-color: white;
+  font-size: 1rem;
+}
+#timeline-help .btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}

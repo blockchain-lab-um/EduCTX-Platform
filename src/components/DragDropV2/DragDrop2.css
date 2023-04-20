@@ -1,0 +1,39 @@
+.filepond--wrapper {
+  height: 100%;
+}
+
+.filepond--panel-root {
+  background-color: white !important;
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  text-align: center;
+  border-width: 1.7px;
+}
+
+.filepond--drop-label {
+  color: #ccc !important;
+}
+
+.dd {
+  margin-left: -0.6rem !important;
+}
+
+.filepond--root {
+  --font-family-sans-serif: "Myriad Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.filepond--root,
+.filepond--root .filepond--drop-label {
+  height: 100%;
+}
+
+.filepond--root .filepond--drop-label {
+  padding: 16px;
+}
+
+.filepond--credits {
+  display: none;
+}

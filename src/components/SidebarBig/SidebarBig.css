@@ -1,0 +1,11 @@
+.heading-big {
+    font-weight: 500 !important;
+}
+
+#home .statement:hover {
+    font-weight: 400 !important;
+}
+
+#sign-up-column a:hover {
+    text-decoration: none;
+}

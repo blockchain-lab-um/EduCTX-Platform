@@ -1,0 +1,9 @@
+#help-chapters a:hover {
+    text-decoration: none !important;
+    font-weight: lighter !important;
+}
+
+#help-chapters .card:hover {
+    border: solid 1.5px #38B87E;
+    background-color: #EBF8F2;
+}

@@ -1,0 +1,49 @@
+stages:
+    - create
+    - build
+    - deploy
+
+variables:
+    TAG_LATEST: $REPOSITORY/eductx-app:latest
+    TAG_COMMIT: $REPOSITORY/eductx-app:$CI_COMMIT_SHORT_SHA
+
+create:
+    only:
+        - deploy
+    stage: create
+    image: node:11.15.0
+    script:
+        - npm install
+        - npm run-script build
+    artifacts:
+        paths:
+            - build
+
+
+
+build:
+    only:
+        - deploy
+    stage: build
+    image: docker:latest
+    tags:
+        - dind
+    services:
+        - docker:dind
+    script:
+        - docker build -t $TAG_LATEST -t $TAG_COMMIT .
+
+
+
+deploy:
+    only: 
+        - deploy
+    image: docker:latest
+    tags:
+        - dind
+    services:
+        - docker:dind
+    stage: deploy
+    script:
+        - docker container rm -f eductx-app || true
+        - docker run -d -p 20010:80 --name eductx-app $TAG_COMMIT

@@ -1,0 +1,11 @@
+/* #my-certificates .MuiTableBody-root .MuiSvgIcon-root {
+    color: #38b87e !important;
+} */
+
+input[type=checkbox]:checked {
+    color: #38b87e !important;
+}
+
+#index .MuiPaper-root{
+    min-height:0vh !important;
+}

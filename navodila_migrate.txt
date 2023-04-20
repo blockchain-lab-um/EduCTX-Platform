@@ -1,0 +1,2 @@
+truffle migrate --network parity --reset
+truffle exec --network parity \other\init_communication.js
